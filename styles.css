@@ -1,0 +1,412 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk logo */
+.logo img {
+    width: 150px; /* Sesuaikan ukuran logo */
+    height: auto;
+}
+
+/* Styling untuk menu navigasi */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+/* Styling untuk link di menu */
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Efek hover untuk link */
+nav ul li a:hover {
+    color: #007bff; /* Warna biru saat hover */
+    border-bottom: 2px solid #007bff; /* Garis bawah berwarna biru */
+}
+
+/* Konten dengan 2 Kolom */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    margin-bottom: 30px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.img {
+    width:75%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Styling untuk teks */
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #000000;
+    text-align: left;
+}
+
+
+
+/* Responsif: Menyusun kolom menjadi satu di layar kecil */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .column {
+        margin-bottom: 20px;
+    }
+}
+
+/* Styling untuk section */
+.reasons {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.reasons h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.reason p {
+    text-align: center;
+}
+/* Styling untuk daftar alasan */
+.reason-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.reason {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.reason .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.reason h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.reason p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Styling untuk responsivitas */
+@media (max-width: 768px) {
+    .reason-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Styling untuk section paket */
+.packages {
+    padding: 50px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+.packages h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Styling untuk div yang berisi paket */
+.package-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling untuk setiap paket */
+.package {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Kontainer teks yang berada di bagian bawah */
+.package-info {
+    position: absolute;
+    bottom: 10px; /* Memastikan teks berada di bagian bawah */
+    left: 10px;
+    right: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #00000052;
+}
+
+/* Styling untuk teks di dalam package-info */
+.package-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.view-package-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.view-package-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Styling untuk responsivitas */
+@media (max-width: 1024px) {
+    .package-options {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom di layar lebih kecil */
+    }
+}
+
+@media (max-width: 768px) {
+    .package-options {
+        grid-template-columns: 1fr; /* 1 kolom di layar sangat kecil */
+    }
+}
+
+/* Styling untuk galeri */
+.gallery {
+    text-align: center;
+    padding: 40px;
+}
+
+.gallery h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tiga kolom */
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* Styling untuk modal */
+.modal {
+    display: none; /* Modal disembunyikan secara default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    text-align: center;
+}
+
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    margin: 5% auto;
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+/* Tombol close di modal */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+/* Responsivitas untuk galeri */
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); /* Dua kolom pada layar lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        grid-template-columns: 1fr; /* Satu kolom pada layar sangat kecil */
+    }
+}
+
+
+/* Styling untuk footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%;
+    padding: 10px;
+}
+.footer-section .social-media{
+    display: inline-block;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-section p {
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.footer-section a:hover {
+    color: #007bff;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media li {
+    font-size: 20px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #007bff;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

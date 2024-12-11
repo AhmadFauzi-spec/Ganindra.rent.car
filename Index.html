@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganindra Rent Car</title>
+        <!-- Link ke Font Awesome untuk ikon media sosial -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/gambar-font/Ganindra Rent Car.png" alt="Logo Perusahaan">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Home</a></li>
+                <li><a href="/link-tour/htmltour.html">Peket Wisata</a></li>
+                <li><a href="/link-sewa/sewa_mobil.html">Rental Mobil</a></li>
+                <li><a href="#footer">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- Konten 2 Kolom -->
+  <section class="content" id="beranda">
+    <div class="column">
+        <img src="/foto-mobil/cover sewa mobil.jpg" alt="Keindahan Alam" class="img">
+    </div>
+    <div class="column">
+        <h2>Ganindra Rent Car</h2>
+        <p>Kami menyediakan berbagai pilihan mobil untuk memenuhi kebutuhan perjalanan Anda, mulai dari mobil pribadi hingga kendaraan untuk rombongan! Dengan layanan sewa mobil kami, Anda bisa bebas bepergian kapan saja dan ke mana saja tanpa khawatir.
+            Dengan pelayanan prima dan 24 jam.
+        </p>
+    </div>
+    </section>
+
+    <section class="reasons">
+        <h2 style="text-align: center;">Kenapa Memilih Kami Sebagai Rekanan Anda?</h2>
+        <div class="reason-list">
+            <div class="reason">
+                <span class="icon">💰</span>
+                <h3>Harga yang Kompetitif</h3>
+                <p>Kami menawarkan harga yang bersaing dengan kualitas terbaik, memberikan solusi yang efisien untuk kebutuhan Anda.</p>
+            </div>
+            <div class="reason">
+                <span class="icon">🏆</span>
+                <h3>Berpengalaman</h3>
+                <p>Dengan pengalaman bertahun-tahun dalam industri ini, kami memahami dengan baik kebutuhan dan tantangan yang dihadapi oleh klien kami.</p>
+            </div>
+            <div class="reason">
+                <span class="icon">✅</span>
+                <h3>Terpercaya</h3>
+                <p>Kami menjaga reputasi kami dengan selalu memberikan layanan terbaik, berkomitmen pada kepuasan klien, dan selalu tepat waktu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="packages">
+        <h2 style="text-align: center;">Pilih Paket Kami</h2>
+        <div class="package-options">
+            <!-- Paket 1: Sewa Mobil -->
+            <div class="package" style="background-image: url('foto-mobil/Avanza.jpg');">
+                <div class="package-info">
+                    <h3>Sewa Mobil</h3>
+                    <a href="/link-sewa/sewa_mobil.html" class="view-package-btn" >Lihat Paket <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- Paket 2: Tour & Travel -->
+            <div class="package" style="background-image: url('foto-paket/Tour-dan-travel.png');">
+                <div class="package-info">
+                    <h3>Tour & Travel</h3>
+                    <a href="/link-tour/htmltour.html" class="view-package-btn" >Lihat Paket <i class="fas fa-arrow-right"></i></a>                </div>
+            </div>
+            <!-- Paket 3: Shuttle -->
+            <div class="package" style="background-image: url('foto-mobil/1\ hiace\ premio\ silver\ metallic.png');">
+                <div class="package-info">
+                    <h3>Shuttle</h3>
+                    <a href="#" class="view-package-btn" >Lihat Paket <i class="fas fa-arrow-right"></i></a>                </div>
+            </div>
+            <!-- Paket 4: Drop Off -->
+            <div class="package" style="background-image: url('foto-paket/stasiun\ tugu.jpg');">
+                <div class="package-info">
+                    <h3>Drop Off</h3>
+                    <a href="#" class="view-package-btn" >Lihat Paket <i class="fas fa-arrow-right"></i></a>                </div>
+            </div>
+            <!-- Paket 5: Study Tour -->
+            <div class="package" style="background-image: url('foto-paket/studitour.jpg');">
+                <div class="package-info">
+                    <h3>Study Tour</h3>
+                    <a href="#" class="view-package-btn" >Lihat Paket <i class="fas fa-arrow-right"></i></a>                </div>
+            </div>
+            <!-- Paket 6: Ziarah -->
+            <div class="package" style="background-image: url('foto-paket/Masjid\ menara\ kudus.JPG');">
+                <div class="package-info">
+                    <h3>Ziarah</h3>
+                    <a href="#" class="view-package-btn" >Lihat Paket <i class="fas fa-arrow-right"></i></a>                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Galeri Foto</h2>
+        <div class="gallery-container">
+            <!-- Gambar 1 -->
+            <div class="gallery-item">
+                <img src="/perjalanan/1.JPG" alt="Image 1" class="gallery-image" onclick="openModal('image1.jpg')">
+            </div>
+            <!-- Gambar 2 -->
+            <div class="gallery-item">
+                <img src="perjalanan/2.jpg" alt="Image 2" class="gallery-image" onclick="openModal('image2.jpg')">
+            </div>
+            <!-- Gambar 3 -->
+            <div class="gallery-item">
+                <img src="perjalanan/4.jpg" alt="Image 3" class="gallery-image" onclick="openModal('image3.jpg')">
+            </div>
+            <!-- Gambar 4 -->
+            <div class="gallery-item">
+                <img src="perjalanan/5.jpg" alt="Image 4" class="gallery-image" onclick="openModal('image4.jpg')">
+            </div>
+            <!-- Gambar 5 -->
+            <div class="gallery-item">
+                <img src="perjalanan/3.jpg" alt="Image 5" class="gallery-image" onclick="openModal('image5.jpg')">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal untuk menampilkan gambar besar -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-image" class="modal-content" src="">
+        <div id="modal-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> +62 858 789 77597</li>
+                    <li><i class="fas fa-envelope"></i> ganindratourtravel@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> 24 Hours</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Alamat</h3>
+                <p>Jl. Agrowisata, Bangunharjo, Bangun Kerto, Turi, Sleman, Yogyakarta. 55551</p>
+                <a href="https://maps.app.goo.gl/KWuB4DtYzwjYjGqe6" target="_blank" class="google-maps-link">
+                    <i class="fas fa-map-marker-alt"></i> Lihat di Google Maps
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Sosial Media</h3>
+                <ul class="social-media">
+                    <li><a href="https://api.whatsapp.com/send?phone=6285878977597" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> Whatsapp</li>
+                    <li><a href="https://www.facebook.com/pages/ganta%20rent%20a%20car/104127356343126/" target="_blank"><i class="fab fa-facebook-f"></i></a> Facebook</li>
+                    <li><a href="https://www.instagram.com/ganindra_rent_car/" target="_blank"><i class="fab fa-instagram"></i> Instagram </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ganindra Rent Cars. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
