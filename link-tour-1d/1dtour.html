@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ganindra Rent Car</title>
+    <!-- Link ke Font Awesome untuk ikon media sosial -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles1dt.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../gambar-font/Ganindra Rent Car.png" alt="Logo Perusahaan" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="../Tour/htmltour.html">Peket Wisata</a></li>
+          <li><a href="../link-sewa/sewa_mobil.html">Rental Mobil</a></li>
+          <li><a href="#footer">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="header">
+      <span class="header-text">Paket Wisata 1 Hari</span>
+    </div>
+
+    <div class="container">
+      <!-- Paket Wisata 1 -->
+      <div class="paket-wisata">
+        <h3>Paket Trip Breksi</h3>
+        <img
+          src="./fototur.1/tebing-breksi.jpg"
+          alt="Breksi"
+        />
+        <p>Rp 3.500.000</p>
+        <!-- Tab Navigation -->
+        <div class="tab-container">
+          <button class="tab-button active" onclick="showTab('summary-1')">
+            Destinasi
+          </button>
+          <button class="tab-button" onclick="showTab('price-1')">
+            Detail Harga
+          </button>
+          <button class="tab-button" onclick="showTab('itinerary-1')">
+            Itinerary
+          </button>
+        </div>
+        <!-- Tab Content -->
+        <div id="summary-1" class="tab-content active">
+          <h4>Destinasi Wisata:</h4>
+          <ol class="destinasi-list">
+            <li>Tebing Breksi</li>
+            <li>Candi Ijo</li>
+            <li>Gua Pindul</li>
+            <li>Pantai Sadranan</li>
+            <li>Pusat Oleh - oleh</li>
+          </ol>
+        </div>
+        <div id="price-1" class="tab-content">
+          <h4>Detail Harga:</h4>
+
+          <!-- Tabel Detail Harga -->
+          <table class="harga-tabel">
+            <thead>
+              <tr>
+                <th>Jumlah Peserta</th>
+                <th>Harga per Pax</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2-3 Orang</td>
+                <td>Rp 450.000</td>
+              </tr>
+              <tr>
+                <td>4-6 Orang</td>
+                <td>Rp 350.000</td>
+              </tr>
+              <tr>
+                <td>7-10 Orang</td>
+                <td>Rp 280.000</td>
+              </tr>
+              <tr>
+                <td>10+ Orang</td>
+                <td>Rp 260.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="itinerary-1" class="tab-content">
+          <h4>Itinerary:</h4>
+          <ol>
+            <li>
+              06:00: Berangkat dari hotel/stasiun menuju Tebing Breksi (estimasi
+              waktu perjalanan: 1 jam).
+            </li>
+            <li>
+              07:00 - 08:30: Eksplorasi Tebing Breksi, berfoto, dan menikmati
+              pemandangan alam.
+            </li>
+            <li>08:30 - 09:00: Perjalanan ke Candi Ijo (sekitar 30 menit).</li>
+            <li>
+              09:00 - 10:30: Mengunjungi Candi Ijo, melihat pemandangan dan
+              menikmati suasana.
+            </li>
+            <li>
+              10:30 - 11:30: Perjalanan menuju Gua Pindul (estimasi waktu
+              perjalanan: 1 jam).
+            </li>
+            <li>
+              11:30 - 13:30: Kegiatan tubing di Gua Pindul (termasuk instruktur
+              dan perlengkapan).
+            </li>
+            <li>
+              13:30 - 14:30: Makan siang di restoran lokal di sekitar Gua
+              Pindul.
+            </li>
+            <li>
+              14:30 - 15:00: Perjalanan menuju Pantai Sadranan (estimasi waktu
+              perjalanan: 30 menit).
+            </li>
+            <li>
+              15:00 - 17:00: Menikmati waktu di Pantai Sadranan, berenang,
+              berjalan-jalan di sepanjang pantai.
+            </li>
+            <li>
+              17:00 - 18:00: Perjalanan menuju pusat oleh-oleh di Yogyakarta
+              (estimasi waktu perjalanan: 1 jam).
+            </li>
+            <li>
+              18:00 - 19:30: Belanja oleh-oleh di pusat oleh-oleh (seperti
+              bakpia, gudeg, dan kerajinan tangan).
+            </li>
+            <li>19:30 - 20:30: Perjalanan kembali ke hotel/stasiun.</li>
+            <li>
+              20:30 - 21:00: Tiba di hotel/stasiun, istirahat, dan akhir
+              perjalanan.
+            </li>
+          </ol>
+        </div>
+        <div class="whatsapp-button-container">
+          <a
+            href="https://wa.me/6281802540908?text=Halo,+saya+tertarik+dengan+paket+wisata+Trip+Breksi"
+            class="whatsapp-button"
+            target="_blank"
+            >Pesan Sekarang via WhatsApp</a
+          >
+        </div>
+      </div>
+
+      <!-- Paket Wisata 2 -->
+      <div class="paket-wisata">
+        <h3>Paket Trip Merapi</h3>
+        <img
+          src="./fototur.1/jeep merapi.jpg"
+          alt="Paket Trip Merapi"
+        />
+        <p>Rp 2.000.000</p>
+        <!-- Tab Navigation -->
+        <div class="tab-container">
+          <button class="tab-button active" onclick="showTab('summary-2')">
+            Destinasi
+          </button>
+          <button class="tab-button" onclick="showTab('price-2')">
+            Detail Harga
+          </button>
+          <button class="tab-button" onclick="showTab('itinerary-2')">
+            Itinerary
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="summary-2" class="tab-content active">
+          <h4>Destinasi Wisata:</h4>
+          <ol class="destinasi-list">
+            <li>Museum Ullen Sentalu</li>
+            <li>Lava Tour Merapi</li>
+            <li>Ibarbo Park</li>
+            <li>Heha Forest</li>
+            <li>Pusat Oleh - oleh</li>
+          </ol>
+        </div>
+        <div id="price-2" class="tab-content">
+          <!-- Tabel Detail Harga -->
+          <table class="harga-tabel">
+            <thead>
+              <tr>
+                <th>Jumlah Peserta</th>
+                <th>Harga per Pax</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1-2 Orang</td>
+                <td>Rp 5.000.000</td>
+              </tr>
+              <tr>
+                <td>3-5 Orang</td>
+                <td>Rp 4.500.000</td>
+              </tr>
+              <tr>
+                <td>6-10 Orang</td>
+                <td>Rp 4.000.000</td>
+              </tr>
+              <tr>
+                <td>10+ Orang</td>
+                <td>Rp 3.500.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="itinerary-2" class="tab-content">
+          <h4>Itinerary:</h4>
+          <ol>
+            <li>
+              08:00: Berangkat menuju Museum Ullen Sentalu (estimasi waktu
+              perjalanan: 1 jam).
+            </li>
+            <li>
+              09:00 - 11:00: Mengunjungi Museum Ullen Sentalu, mengeksplorasi
+              koleksi seni dan budaya Jawa yang menarik.
+            </li>
+            <li>
+              11:00 - 11:30: Perjalanan menuju lokasi Lava Tour Merapi (sekitar
+              1 jam).
+            </li>
+            <li>
+              11:30 - 13:30: Lava Tour Merapi, menikmati perjalanan menggunakan
+              Jeep 4x4 melewati jalur erupsi Merapi, melihat sisa-sisa erupsi,
+              dan pemandangan alam sekitar.
+            </li>
+            <li>
+              14:30 - 15:00: Perjalanan menuju HeHa Forest (estimasi waktu
+              perjalanan: 1 jam).
+            </li>
+            <li>
+              15:00 - 17:00: Eksplorasi HeHa Forest, menikmati suasana alam,
+              berfoto di spot-spot Instagramable, dan bersantai di kafe yang ada
+              di dalam area.
+            </li>
+            <li>
+              17:00 - 17:30: Perjalanan menuju Ibarbo Park (estimasi waktu
+              perjalanan: 30 menit).
+            </li>
+            <li>
+              17:30 - 18:30: Menjelajahi Ibarbo Park, menikmati suasana sore di
+              taman yang indah, dan menikmati kopi atau camilan.
+            </li>
+            <li>
+              18:30 - 19:00: Perjalanan menuju pusat oleh-oleh khas Jogja
+              (estimasi waktu perjalanan: 1 jam).
+            </li>
+            <li>
+              19:00 - 20:30: Belanja oleh-oleh khas Jogja seperti bakpia, gudeg
+              kalengan, kerajinan tangan, dan makanan khas lainnya.
+            </li>
+            <li>20:30 - 21:00: Kembali ke hotel dan istirahat.</li>
+          </ol>
+        </div>
+        <!-- Tombol WhatsApp -->
+        <div class="whatsapp-button-container">
+          <a
+            href="https://wa.me/6281234567890?text=Halo,+saya+tertarik+dengan+paket+wisata+Bali"
+            class="whatsapp-button"
+            target="_blank"
+            >Pesan Sekarang via WhatsApp</a
+          >
+        </div>
+      </div>
+      <!-- Paket Wisata 3 -->
+      <div class="paket-wisata">
+        <h3>Paket Trip Borobudur</h3>
+        <img
+          src="./fototur.1/budur.jpg"
+          alt="Paket Trip Borobudur"
+        />
+        <p>Rp 2.000.000</p>
+        <!-- Tab Navigation -->
+        <div class="tab-container">
+          <button class="tab-button active" onclick="showTab('summary-3')">
+            Destinasi
+          </button>
+          <button class="tab-button" onclick="showTab('price-3')">
+            Detail Harga
+          </button>
+          <button class="tab-button" onclick="showTab('itinerary-3')">
+            Itinerary
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="summary-3" class="tab-content active">
+          <h4>Destinasi Wisata:</h4>
+          <ol class="destinasi-list">
+            <li>Punthuk Setumbu</li>
+            <li>Candi Borobudur</li>
+            <li>Candi Mendhut</li>
+            <li>Rafting Sungai Elo</li>
+            <li>Pusat Oleh - oleh Khas</li>
+          </ol>
+        </div>
+        <div id="price-3" class="tab-content">
+          <!-- Tabel Detail Harga -->
+          <table class="harga-tabel">
+            <thead>
+              <tr>
+                <th>Jumlah Peserta</th>
+                <th>Harga per Pax</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1-2 Orang</td>
+                <td>Rp 5.000.000</td>
+              </tr>
+              <tr>
+                <td>3-5 Orang</td>
+                <td>Rp 4.500.000</td>
+              </tr>
+              <tr>
+                <td>6-10 Orang</td>
+                <td>Rp 4.000.000</td>
+              </tr>
+              <tr>
+                <td>10+ Orang</td>
+                <td>Rp 3.500.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="itinerary-3" class="tab-content">
+          <h4>Itinerary:</h4>
+          <ol>
+            <li>
+              04:30: Berangkat dari hotel di Yogyakarta menuju Punthuk Setumbu
+              (estimasi waktu perjalanan: 1,5 jam).
+            </li>
+            <li>
+              06:00 - 07:30: Menikmati pemandangan matahari terbit di Punthuk
+              Setumbu, dengan latar belakang Candi Borobudur yang megah.
+            </li>
+            <li>
+              07:30 - 08:00: Perjalanan menuju Candi Borobudur (sekitar 15
+              menit).
+            </li>
+            <li>
+              08:00 - 10:00: Eksplorasi Candi Borobudur, menjelajahi stupa,
+              relung-relung, dan menikmati keindahan arsitektur candi terbesar
+              di dunia.
+            </li>
+            <li>
+              10:00 - 10:30: Perjalanan menuju Candi Mendhut (sekitar 15 menit).
+            </li>
+            <li>
+              10:30 - 11:30: Mengunjungi Candi Mendhut, melihat arca-arca yang
+              terdapat di dalamnya, dan mempelajari sejarah candi.
+            </li>
+            <li>
+              12:30 - 13:00: Perjalanan menuju Sungai Elo (estimasi waktu
+              perjalanan: 30 menit).
+            </li>
+            <li>
+              13:00 - 15:00: Aktivitas di Sungai Elo, seperti arung jeram santai
+              atau sekadar menikmati pemandangan dan suasana tepi sungai.
+            </li>
+            <li>
+              15:00 - 16:00: Perjalanan menuju pusat oleh-oleh khas Magelang
+              atau Yogyakarta (estimasi waktu perjalanan: 1 jam).
+            </li>
+            <li>
+              16:00 - 18:00: Belanja oleh-oleh khas, seperti bakpia, gudeg
+              kalengan, kerajinan tangan, dan makanan khas lainnya.
+            </li>
+            <li>18:00 - 19:00: Perjalanan kembali ke hotel di Yogyakarta.</li>
+            <li>
+              19:00 - 20:00: Tiba di hotel, istirahat, dan akhir perjalanan.
+            </li>
+          </ol>
+        </div>
+        <!-- Tombol WhatsApp -->
+        <div class="whatsapp-button-container">
+          <a
+            href="https://wa.me/6281234567890?text=Halo,+saya+tertarik+dengan+paket+wisata+Bali"
+            class="whatsapp-button"
+            target="_blank"
+            >Pesan Sekarang via WhatsApp</a
+          >
+        </div>
+      </div>
+      <!-- Paket Wisata 4 -->
+      <div class="paket-wisata">
+        <h3>Paket Trip Pinus</h3>
+        <img
+          src="./fototur.1/Pinus.webp"
+          alt="Paket Trip Pinus"
+        />
+        <p>Rp 2.000.000</p>
+        <!-- Tab Navigation -->
+        <div class="tab-container">
+          <button class="tab-button active" onclick="showTab('summary-4')">
+            Destinasi
+          </button>
+          <button class="tab-button" onclick="showTab('price-4')">
+            Detail Harga
+          </button>
+          <button class="tab-button" onclick="showTab('itinerary-4')">
+            Itinerary
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="summary-4" class="tab-content active">
+          <h4>Destinasi Wisata:</h4>
+          <ol class="destinasi-list">
+            <li>Pinus Pengger</li>
+            <li>Pinus Mangunan</li>
+            <li>Goa Pindul</li>
+            <li>Pantai Indrayanti</li>
+            <li>Obelix Sky View</li>
+          </ol>
+        </div>
+        <div id="price-4" class="tab-content">
+          <!-- Tabel Detail Harga -->
+          <table class="harga-tabel">
+            <thead>
+              <tr>
+                <th>Jumlah Peserta</th>
+                <th>Harga per Pax</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1-2 Orang</td>
+                <td>Rp 5.000.000</td>
+              </tr>
+              <tr>
+                <td>3-5 Orang</td>
+                <td>Rp 4.500.000</td>
+              </tr>
+              <tr>
+                <td>6-10 Orang</td>
+                <td>Rp 4.000.000</td>
+              </tr>
+              <tr>
+                <td>10+ Orang</td>
+                <td>Rp 3.500.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="itinerary-4" class="tab-content">
+          <h4>Itinerary:</h4>
+          <ol>
+            <li>
+              06:00: Berangkat dari hotel di Yogyakarta menuju Pinus Pengger
+              (estimasi waktu perjalanan: 1 jam).
+            </li>
+            <li>
+              07:00 - 08:30: Menikmati pemandangan alam di Pinus Pengger,
+              berfoto di spot-spot foto unik yang terbuat dari ranting dan
+              cabang pohon pinus, serta menikmati suasana pagi.
+            </li>
+            <li>
+              08:30 - 09:00: Perjalanan menuju Pinus Mangunan (sekitar 30
+              menit).
+            </li>
+            <li>
+              09:00 - 10:30: Menjelajahi Pinus Mangunan, menikmati pemandangan
+              hutan pinus yang sejuk, dan berfoto di jembatan atau spot yang
+              populer di area ini.
+            </li>
+            <li>
+              10:30 - 11:30: Perjalanan menuju Gua Pindul di Gunungkidul
+              (estimasi waktu perjalanan: 1 jam).
+            </li>
+            <li>
+              11:30 - 13:30: Aktivitas tubing di Gua Pindul, menikmati suasana
+              gua yang indah dengan stalaktit dan stalagmit, serta aliran sungai
+              bawah tanah.
+            </li>
+            <li>
+              14:30 - 15:00: Perjalanan menuju Pantai Indrayanti (estimasi waktu
+              perjalanan: 1 jam).
+            </li>
+            <li>
+              15:00 - 17:00: Menikmati waktu di Pantai Indrayanti, berenang,
+              berjalan-jalan di sepanjang pantai, atau hanya bersantai menikmati
+              suasana laut dan angin laut yang segar.
+            </li>
+            <li>
+              17:00 - 17:30: Perjalanan menuju Obelix Sky View (estimasi waktu
+              perjalanan: 1 jam).
+            </li>
+            <li>
+              17:30 - 19:00: Menikmati pemandangan matahari terbenam di Obelix
+              Sky View, menikmati suasana sore dengan latar belakang pemandangan
+              perbukitan dan lautan, serta bersantai di kafe yang tersedia.
+            </li>
+            <li>
+              19:00 - 20:00: Kembali ke hotel di Yogyakarta dan istirahat.
+            </li>
+          </ol>
+        </div>
+        <!-- Tombol WhatsApp -->
+        <div class="whatsapp-button-container">
+          <a
+            href="https://wa.me/6281234567890?text=Halo,+saya+tertarik+dengan+paket+wisata+Bali"
+            class="whatsapp-button"
+            target="_blank"
+            >Pesan Sekarang via WhatsApp</a
+          >
+        </div>
+      </div>
+      <!-- Paket Wisata 5 -->
+      <div class="paket-wisata">
+        <h3>Paket Trip Menoreh</h3>
+        <img
+          src="./fototur.1/puncak-suroloyo.webp"
+          alt="Paket Wisata Yogyakarta"
+        />
+        <p>Rp 2.000.000</p>
+        <!-- Tab Navigation -->
+        <div class="tab-container">
+          <button class="tab-button active" onclick="showTab('summary-5')">
+            Destinasi
+          </button>
+          <button class="tab-button" onclick="showTab('price-5')">
+            Detail Harga
+          </button>
+          <button class="tab-button" onclick="showTab('itinerary-5')">
+            Itinerary
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="summary-5" class="tab-content active">
+          <h4>Destinasi Wisata:</h4>
+          <ol class="destinasi-list">
+            <li>Puncak Suroloyo</li>
+            <li>Tumpeng Menoreh</li>
+            <li>Sungai Mudal</li>
+            <li>Kedung Pedut</li>
+            <li>Malioboro</li>
+          </ol>
+        </div>
+        <div id="price-5" class="tab-content">
+          <!-- Tabel Detail Harga -->
+          <table class="harga-tabel">
+            <thead>
+              <tr>
+                <th>Jumlah Peserta</th>
+                <th>Harga per Pax</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1-2 Orang</td>
+                <td>Rp 5.000.000</td>
+              </tr>
+              <tr>
+                <td>3-5 Orang</td>
+                <td>Rp 4.500.000</td>
+              </tr>
+              <tr>
+                <td>6-10 Orang</td>
+                <td>Rp 4.000.000</td>
+              </tr>
+              <tr>
+                <td>10+ Orang</td>
+                <td>Rp 3.500.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="itinerary-5" class="tab-content">
+          <h4>Itinerary:</h4>
+          <ol>
+            <li>
+              04:30: Berangkat dari hotel di Yogyakarta menuju Puncak Suroloyo
+              di Perbukitan Menoreh (estimasi waktu perjalanan: 1,5 jam).
+            </li>
+            <li>
+              06:00 - 08:00: Menikmati pemandangan matahari terbit di Puncak
+              Suroloyo, sebuah tempat yang terkenal dengan panorama indahnya,
+              dengan pemandangan Gunung Merapi dan perbukitan Menoreh yang
+              menakjubkan.
+            </li>
+            <li>
+              08:00 - 08:30: Perjalanan menuju Tumpeng Menoreh (sekitar 30
+              menit).
+            </li>
+            <li>
+              08:30 - 10:00: Menjelajahi Tumpeng Menoreh, menikmati keindahan
+              perbukitan, pemandangan alam, serta spot-spot foto yang unik.
+            </li>
+            <li>
+              10:00 - 10:30: Perjalanan menuju Sungai Mudal (sekitar 30 menit).
+            </li>
+            <li>
+              10:30 - 13:00: Mengunjungi Sungai Mudal, tempat yang dikenal
+              dengan airnya yang jernih dan pemandangan alam yang indah. Anda
+              bisa berenang, bermain air, atau sekadar menikmati suasana sejuk
+              di sekitar sungai.
+            </li>
+            <li>
+              14:00 - 14:30: Perjalanan menuju Kedung Pedhut (sekitar 30 menit).
+            </li>
+            <li>
+              14:30 - 16:30: Menikmati keindahan Kedung Pedhut, sebuah air
+              terjun yang dikelilingi hutan tropis yang indah. Anda bisa
+              berenang, bermain air, atau hanya menikmati suasana alam sekitar.
+            </li>
+            <li>
+              16:30 - 17:00: Perjalanan menuju Malioboro (estimasi waktu
+              perjalanan: 1,5 jam).
+            </li>
+            <li>
+              17:00 - 18:00: Tiba di Malioboro, berjalan-jalan di sepanjang
+              jalan yang terkenal dengan kios-kios yang menjual barang-barang
+              khas, seperti batik, kerajinan tangan, dan souvenir.
+            </li>
+            <li>
+              20:00 - 21:30: Menikmati suasana malam di Malioboro, melihat
+              pertunjukan seni jalanan, atau membeli oleh-oleh untuk dibawa
+              pulang.
+            </li>
+            <li>21:30 - 22:00: Kembali ke hotel dan istirahat.</li>
+          </ol>
+        </div>
+        <!-- Tombol WhatsApp -->
+        <div class="whatsapp-button-container">
+          <a
+            href="https://wa.me/6281234567890?text=Halo,+saya+tertarik+dengan+paket+wisata+Bali"
+            class="whatsapp-button"
+            target="_blank"
+            >Pesan Sekarang via WhatsApp</a
+          >
+        </div>
+      </div>
+      <!-- Paket Wisata 6 -->
+      <div class="paket-wisata">
+        <h3>Paket Trip Dieng</h3>
+        <img
+          src="./fototur.1/tlaga warna.webp"
+          alt="Paket Wisata Dieng"
+        />
+        <p>Rp 2.000.000</p>
+        <!-- Tab Navigation -->
+        <div class="tab-container">
+          <button class="tab-button active" onclick="showTab('summary-6')">
+            Destinasi
+          </button>
+          <button class="tab-button" onclick="showTab('price-6')">
+            Detail Harga
+          </button>
+          <button class="tab-button" onclick="showTab('itinerary-6')">
+            Itinerary
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="summary-6" class="tab-content active">
+          <h4>Destinasi Wisata:</h4>
+          <ol class="destinasi-list">
+            <li>Bukit Sikunir</li>
+            <li>Kawah Sikidang</li>
+            <li>Candi Arjuno</li>
+            <li>Tlaga Warna</li>
+            <li>Batu Pandang</li>
+            <li>Pusat Oleh - oleh Khas</li>
+          </ol>
+        </div>
+        <div id="price-6" class="tab-content">
+          <!-- Tabel Detail Harga -->
+          <table class="harga-tabel">
+            <thead>
+              <tr>
+                <th>Jumlah Peserta</th>
+                <th>Harga per Pax</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1-2 Orang</td>
+                <td>Rp 5.000.000</td>
+              </tr>
+              <tr>
+                <td>3-5 Orang</td>
+                <td>Rp 4.500.000</td>
+              </tr>
+              <tr>
+                <td>6-10 Orang</td>
+                <td>Rp 4.000.000</td>
+              </tr>
+              <tr>
+                <td>10+ Orang</td>
+                <td>Rp 3.500.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="itinerary-6" class="tab-content">
+          <h4>Itinerary:</h4>
+          <ol>
+            <li>
+              03:00: Berangkat dari hotel di Yogyakarta menuju Bukit Sikunir
+              (estimasi waktu perjalanan: 5-6 jam).
+            </li>
+            <li>
+              06:30 - 08:00: Menyaksikan pemandangan matahari terbit di Bukit
+              Sikunir. Nikmati panorama indah Gunung Sindoro dan Sumbing. Spot
+              ini sangat cocok untuk berfoto dan menikmati momen matahari
+              terbit.
+            </li>
+            <li>
+              08:00 - 08:30: Perjalanan menuju Kawah Sikidang (sekitar 30
+              menit).
+            </li>
+            <li>
+              08:30 - 09:30: Mengunjungi Kawah Sikidang, tempat yang terkenal
+              dengan kawah vulkaniknya yang mengeluarkan uap dan aroma belerang.
+              Nikmati pemandangan alam yang menakjubkan dan jelajahi sekitar
+              kawah.
+            </li>
+            <li>
+              09:30 - 10:00: Perjalanan menuju Candi Arjuna (sekitar 30 menit).
+            </li>
+            <li>
+              10:00 - 11:30: Menjelajahi Candi Arjuna, kompleks candi Hindu yang
+              terletak di Dieng. Candi ini merupakan situs bersejarah yang
+              penting dan memiliki arsitektur yang menarik untuk dikunjungi.
+            </li>
+            <li>
+              11:30 - 12:00: Perjalanan menuju Telaga Warna (sekitar 30 menit).
+            </li>
+            <li>Siang: Telaga Warna dan Batu Pandang</li>
+            <li>
+              12:00 - 13:30: Menikmati keindahan Telaga Warna, danau yang
+              terkenal dengan airnya yang bisa berubah warna. Jelajahi area
+              sekitar danau dan nikmati pemandangan alam.
+            </li>
+            <li>
+              13:30 - 14:00: Perjalanan menuju Batu Pandang (sekitar 30 menit).
+            </li>
+            <li>
+              14:00 - 15:00: Mengunjungi Batu Pandang, spot yang menawarkan
+              pemandangan spektakuler dari atas bukit dengan latar belakang
+              Telaga Warna dan sekitarnya. Cocok untuk berfoto dan menikmati
+              suasana alam.
+            </li>
+            <li>Sore: Pusat Oleh-Oleh Dieng</li>
+            <li>
+              16:00 - 17:30: Berkunjung ke pusat oleh-oleh Dieng, di mana Anda
+              bisa membeli berbagai produk khas seperti carica (buah khas
+              Dieng), tempe mendoan, kerajinan tangan, dan souvenir lainnya.
+            </li>
+            <li>
+              17:30 - 18:00: Perjalanan menuju Yogyakarta (estimasi waktu
+              perjalanan: 5-6 jam).
+            </li>
+            <li>18:00 - 20:00: Perjalanan kembali ke hotel di Yogyakarta.</li>
+            <li>20:00: Tiba di hotel atau tempat tujuan akhir.</li>
+          </ol>
+        </div>
+        <!-- Tombol WhatsApp -->
+        <div class="whatsapp-button-container">
+          <a
+            href="https://wa.me/6281234567890?text=Halo,+saya+tertarik+dengan+paket+wisata+Bali"
+            class="whatsapp-button"
+            target="_blank"
+            >Pesan Sekarang via WhatsApp</a
+          >
+        </div>
+      </div>
+
+      <!-- Tambah Paket Wisata 3 dan 4 dengan cara yang sama jika perlu -->
+    </div>
+
+    <script src="script1d.js"></script>
+
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Kontak</h3>
+          <ul>
+            <li><i class="fas fa-phone-alt"></i> +62 858 789 77597</li>
+            <li>
+              <i class="fas fa-envelope"></i> ganindratourtravel@gmail.com
+            </li>
+            <li><i class="fas fa-clock"></i> 24 Hours</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Alamat</h3>
+          <p>
+            Jl. Agrowisata, Bangunharjo, Bangun Kerto, Turi, Sleman, Yogyakarta.
+            55551
+          </p>
+          <a
+            href="https://maps.app.goo.gl/KWuB4DtYzwjYjGqe6"
+            target="_blank"
+            class="google-maps-link"
+          >
+            <i class="fas fa-map-marker-alt"></i> Lihat di Google Maps
+          </a>
+        </div>
+        <div class="footer-section">
+          <h3>Sosial Media</h3>
+          <ul class="social-media">
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=6285878977597"
+                target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              Whatsapp
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/pages/ganta%20rent%20a%20car/104127356343126/"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              Facebook
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/ganindra_rent_car/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i> Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ganindra Rent Cars. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ganindra Rent Car</title>
+    <!-- Link ke Font Awesome untuk ikon media sosial -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles2d.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../gambar-font/Ganindra Rent Car.png" alt="Logo Perusahaan" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/Index.html">Home</a></li>
+          <li><a href="../Tour/htmltour.html">Peket Wisata</a></li>
+          <li><a href="../link-sewa/sewa_mobil.html">Rental Mobil</a></li>
+          <li><a href="#footer">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="header">
+      <span class="header-text">Paket Wisata 2 Hari</span>
+    </div>
+
+    <div class="container">
+      <!-- Paket Wisata 1 -->
+      <div class="paket-wisata">
+        <h3>Paket Wisata 1</h3>
+        <img
+          src="./foto2d/prambanan.jpeg"
+          alt="Paket Wisata Prambanan"
+        />
+        <p>Rp 3.500.000</p>
+        <!-- Tab Navigation -->
+        <div class="tab-container">
+          <button class="tab-button active" onclick="showTab('summary-1')">
+            Destinasi
+          </button>
+          <button class="tab-button" onclick="showTab('price-1')">
+            Detail Harga
+          </button>
+          <button class="tab-button" onclick="showTab('itinerary-1')">
+            Itinerary
+          </button>
+        </div>
+        <!-- Tab Content -->
+        <div id="summary-1" class="tab-content active">
+          <h4>Destinasi Wisata:</h4>
+          <ol class="destinasi-list">
+            <li>Tebing Breksi</li>
+            <li>Candi Ijo</li>
+            <li>Gua Pindul</li>
+            <li>Pantai Sadranan</li>
+            <li>Pusat Oleh - oleh</li>
+
+          </ol>
+        </div>
+        <div id="price-1" class="tab-content">
+          <h4>Detail Harga:</h4>
+
+          <!-- Tabel Detail Harga -->
+          <table class="harga-tabel">
+            <thead>
+              <tr>
+                <th>Jumlah Peserta</th>
+                <th>Harga per Pax</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2-3 Orang</td>
+                <td>Rp 450.000</td>
+              </tr>
+              <tr>
+                <td>4-6 Orang</td>
+                <td>Rp 350.000</td>
+              </tr>
+              <tr>
+                <td>7-10 Orang</td>
+                <td>Rp 280.000</td>
+              </tr>
+              <tr>
+                <td>10+ Orang</td>
+                <td>Rp 2600.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="itinerary-1" class="tab-content">
+          <h4>Itinerary:</h4>
+          <ol>
+            <li>Penjemputan dan perjalan ke Tebing Breksi</li>
+            <li>Dilanjutkan menuju ke Candi Ijo yang tidak jauh dari kawasan Tebing Breksi</li>
+            <li>Perjalanan selanjutnya ke Wisata Gua Pindul untuk kegiatan Tubing di Gua Pindul</li>
+            <li>Tujuan selanjutnya ke Pantai Sadranan menikmati suasana pantai dan Sunset</li>
+            <li>Wisata Belanja di pusat Oleh - oleh khas Jogja</li>
+            <li>transfer Off kembali.</li>
+          </ol>
+        </div>
+        <div class="whatsapp-button-container">
+          <a
+            href="https://wa.me/6281234567890?text=Halo,+saya+tertarik+dengan+paket+wisata+Bali"
+            class="whatsapp-button"
+            target="_blank"
+            >Pesan Sekarang via WhatsApp</a
+          >
+        </div>
+      </div>
+
+      <!-- Paket Wisata 2 -->
+      <div class="paket-wisata">
+        <h3>Paket Wisata 2</h3>
+        <img
+          src="./foto2d/pantai gunungkidul.jpeg"
+          alt="Paket Wisata Gunung Kidul"
+        />
+        <p>Rp 2.000.000</p>
+        <!-- Tab Navigation -->
+        <div class="tab-container">
+          <button class="tab-button active" onclick="showTab('summary-2')">
+            Destinasi
+          </button>
+          <button class="tab-button" onclick="showTab('price-2')">
+            Detail Harga
+          </button>
+          <button class="tab-button" onclick="showTab('itinerary-2')">
+            Itinerary
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="summary-2" class="tab-content active">
+          <h4>Destinasi Wisata:</h4>
+          <ol class="destinasi-list">
+            <li>Museum Ullen Sentalu</li>
+            <li>Lava Tour Merapi</li>
+            <li>Ibarbo Park</li>
+            <li>Desa Wisata Krebet</li>
+            <li>Pusat Oleh - oleh</li>
+          </ol>
+        </div>
+        <div id="price-2" class="tab-content">
+          <!-- Tabel Detail Harga -->
+          <table class="harga-tabel">
+            <thead>
+              <tr>
+                <th>Jumlah Peserta</th>
+                <th>Harga per Pax</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1-2 Orang</td>
+                <td>Rp 5.000.000</td>
+              </tr>
+              <tr>
+                <td>3-5 Orang</td>
+                <td>Rp 4.500.000</td>
+              </tr>
+              <tr>
+                <td>6-10 Orang</td>
+                <td>Rp 4.000.000</td>
+              </tr>
+              <tr>
+                <td>10+ Orang</td>
+                <td>Rp 3.500.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="itinerary-2" class="tab-content">
+          <h4>Itinerary:</h4>
+          <ol>
+            <li>
+              <strong>Hari 1:</strong> Tiba di Yogyakarta, transfer ke hotel
+            </li>
+            <li><strong>Hari 2:</strong> Tour Candi Borobudur dan Prambanan</li>
+            <li>
+              <strong>Hari 3:</strong> Jelajahi Pantai Parangtritis dan Kraton
+              Yogyakarta
+            </li>
+            <li>
+              <strong>Hari 4:</strong> Aktivitas bebas, transfer ke bandara
+            </li>
+          </ol>
+        </div>
+        <!-- Tombol WhatsApp -->
+        <div class="whatsapp-button-container">
+          <a
+            href="https://wa.me/6281234567890?text=Halo,+saya+tertarik+dengan+paket+wisata+Bali"
+            class="whatsapp-button"
+            target="_blank"
+            >Pesan Sekarang via WhatsApp</a
+          >
+        </div>
+      </div>
+      <!-- Paket Wisata 3 -->
+      <div class="paket-wisata">
+        <h3>Paket Wisata 3</h3>
+        <img
+          src="./foto2d/hehaocean.webp"
+          alt="Paket Wisata Bantul"
+        />
+        <p>Rp 2.000.000</p>
+        <!-- Tab Navigation -->
+        <div class="tab-container">
+          <button class="tab-button active" onclick="showTab('summary-3')">
+            Destinasi
+          </button>
+          <button class="tab-button" onclick="showTab('price-3')">
+            Detail Harga
+          </button>
+          <button class="tab-button" onclick="showTab('itinerary-3')">
+            Itinerary
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="summary-3" class="tab-content active">
+          <h4>Destinasi Wisata:</h4>
+          <ol class="destinasi-list">
+            <li>Tanah Lot</li>
+            <li>Uluwatu</li>
+            <li>Taman Ayun</li>
+            <li>Seminyak Beach</li>
+            <li>Kuta Beach</li>
+          </ol>
+        </div>
+        <div id="price-3" class="tab-content">
+          <!-- Tabel Detail Harga -->
+          <table class="harga-tabel">
+            <thead>
+              <tr>
+                <th>Jumlah Peserta</th>
+                <th>Harga per Pax</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1-2 Orang</td>
+                <td>Rp 5.000.000</td>
+              </tr>
+              <tr>
+                <td>3-5 Orang</td>
+                <td>Rp 4.500.000</td>
+              </tr>
+              <tr>
+                <td>6-10 Orang</td>
+                <td>Rp 4.000.000</td>
+              </tr>
+              <tr>
+                <td>10+ Orang</td>
+                <td>Rp 3.500.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="itinerary-3" class="tab-content">
+          <h4>Itinerary:</h4>
+          <ol>
+            <li>
+              <strong>Hari 1:</strong> Tiba di Yogyakarta, transfer ke hotel
+            </li>
+            <li><strong>Hari 2:</strong> Tour Candi Borobudur dan Prambanan</li>
+            <li>
+              <strong>Hari 3:</strong> Jelajahi Pantai Parangtritis dan Kraton
+              Yogyakarta
+            </li>
+            <li>
+              <strong>Hari 4:</strong> Aktivitas bebas, transfer ke bandara
+            </li>
+          </ol>
+        </div>
+        <!-- Tombol WhatsApp -->
+        <div class="whatsapp-button-container">
+          <a
+            href="https://wa.me/6281234567890?text=Halo,+saya+tertarik+dengan+paket+wisata+Bali"
+            class="whatsapp-button"
+            target="_blank"
+            >Pesan Sekarang via WhatsApp</a
+          >
+        </div>
+      </div>
+      <!-- Paket Wisata 4 -->
+      <div class="paket-wisata">
+        <h3>Paket Wisata 4</h3>
+        <img
+          src="./foto2d/borobudur.webp"
+          alt="Paket Wisata Kota Borobudur"
+        />
+        <p>Rp 2.000.000</p>
+        <!-- Tab Navigation -->
+        <div class="tab-container">
+          <button class="tab-button active" onclick="showTab('summary-4')">
+            Destinasi
+          </button>
+          <button class="tab-button" onclick="showTab('price-4')">
+            Detail Harga
+          </button>
+          <button class="tab-button" onclick="showTab('itinerary-4')">
+            Itinerary
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="summary-4" class="tab-content active">
+          <h4>Destinasi Wisata:</h4>
+          <ol class="destinasi-list">
+            <li>Tanah Lot</li>
+            <li>Uluwatu</li>
+            <li>Taman Ayun</li>
+            <li>Seminyak Beach</li>
+            <li>Kuta Beach</li>
+          </ol>
+        </div>
+        <div id="price-4" class="tab-content">
+          <!-- Tabel Detail Harga -->
+          <table class="harga-tabel">
+            <thead>
+              <tr>
+                <th>Jumlah Peserta</th>
+                <th>Harga per Pax</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1-2 Orang</td>
+                <td>Rp 5.000.000</td>
+              </tr>
+              <tr>
+                <td>3-5 Orang</td>
+                <td>Rp 4.500.000</td>
+              </tr>
+              <tr>
+                <td>6-10 Orang</td>
+                <td>Rp 4.000.000</td>
+              </tr>
+              <tr>
+                <td>10+ Orang</td>
+                <td>Rp 3.500.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="itinerary-4" class="tab-content">
+          <h4>Itinerary:</h4>
+          <ol>
+            <li>
+              <strong>Hari 1:</strong> Tiba di Yogyakarta, transfer ke hotel
+            </li>
+            <li><strong>Hari 2:</strong> Tour Candi Borobudur dan Prambanan</li>
+            <li>
+              <strong>Hari 3:</strong> Jelajahi Pantai Parangtritis dan Kraton
+              Yogyakarta
+            </li>
+            <li>
+              <strong>Hari 4:</strong> Aktivitas bebas, transfer ke bandara
+            </li>
+          </ol>
+        </div>
+        <!-- Tombol WhatsApp -->
+        <div class="whatsapp-button-container">
+          <a
+            href="https://wa.me/6281234567890?text=Halo,+saya+tertarik+dengan+paket+wisata+Bali"
+            class="whatsapp-button"
+            target="_blank"
+            >Pesan Sekarang via WhatsApp</a
+          >
+        </div>
+      </div>
+
+      <!-- Tambah Paket Wisata 3 dan 4 dengan cara yang sama jika perlu -->
+    </div>
+
+    <script src="script2d.js"></script>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> +62 858 789 77597</li>
+                    <li><i class="fas fa-envelope"></i> ganindratourtravel@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> 24 Hours</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Alamat</h3>
+                <p>Jl. Agrowisata, Bangunharjo, Bangun Kerto, Turi, Sleman, Yogyakarta. 55551</p>
+                <a href="https://maps.app.goo.gl/KWuB4DtYzwjYjGqe6" target="_blank" class="google-maps-link">
+                    <i class="fas fa-map-marker-alt"></i> Lihat di Google Maps
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Sosial Media</h3>
+                <ul class="social-media">
+                    <li><a href="https://api.whatsapp.com/send?phone=6285878977597" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> Whatsapp</li>
+                    <li><a href="https://www.facebook.com/pages/ganta%20rent%20a%20car/104127356343126/" target="_blank"><i class="fab fa-facebook-f"></i></a> Facebook</li>
+                    <li><a href="https://www.instagram.com/ganindra_rent_car/" target="_blank"><i class="fab fa-instagram"></i> Instagram </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ganindra Rent Cars. All Rights Reserved.</p>
+        </div>
+    </footer>
+  
+</body>
+</html>
