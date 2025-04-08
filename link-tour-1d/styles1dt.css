@@ -230,6 +230,18 @@ h1 {
 
 
 
+.buat-perjalanan {
+    display: flex;
+    justify-content: center;
+    background-color: ;
+    border: 2px solid #333;
+    padding: 20px 20px;
+    border-radius: 8%;
+    width: 250px;
+    height: auto;
+}
+
+ 
 /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
     .container {
